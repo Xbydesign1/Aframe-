@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> Circle of Eyes</title>
+    <meta name="description" content="Hello, World! - A-Frame">
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  </head>
+
+  <body>
+    <a-scene>
+      <!----------- TEXTURES ------------->
+         <a-assets>
+          <img id="Texture_Kit_02"
+          src="Aframe Assignment/Texture_Kit_02.jpeg">
+        </a-assets>
+
+      <!----------- PRIMATIVES ------------->
+        <a-plane src="#Texture_Kit_02" color=#151242 position="0 -.01 0"
+        rotation="-90 0 0" width="450" height="600" repeat=".2 .2">
+        </a-plane>
+
+      <!----------- LIGHTING ------------->>
+      <a-entity light="type: hemisphere; color: #07013d; groundColor: #ad3505; intensity: 2" position="0 10 10"></a-entity>
+      <a-entity light="type: spot; intensity: 2.5; target: ; angle: 7; penumbra: 1;" position="30 20 50"></a-entity>
+      <a-entity light="type: spot; intensity: 3.5; target: ; angle: 4; penumbra: 1;" position="30 20 50"></a-entity>
+
+      <!----------- CAMERA ------------->
+      <a-entity fov="37" rotation="10 10 0" position="2.5 1.1 3">
+        <a-camera></a-camera>
+      </a-entity>
+
+      <!-- RIGHT Side-->
+      <a-image src="#lightTexture" scale="4, 4, 4" position="-6.9   7.7 3.8" rotation="0 90 90"></a-image>
+
+      <a-image src="#lightTexture" scale="4, 4, 4" position="-7.2 7.9 -6.3" rotation="0 45 90"></a-image>
+
+      <a-image src="#lightTexture" scale="4, 4, 4" position="-7 7.9 -20" rotation="0 40 90"></a-image>
+
+      <a-image src="#lightTexture" scale="4, 4, 4" position="-6.8 7.9 -35.1" rotation="0 30 90"></a-image>
+
+      <a-image src="#lightTexture" scale="4, 4, 4" position="-6.8 7.9 -50.1" rotation="0 20 90"></a-image>
+
+      <a-image src="#lightTexture" scale="4, 4, 4" position="-6.8 7.9 -65.1" rotation="0 20 90"></a-image>
+
+      <!-- RIGHT Side-->
+      <a-image src="#lightTexture" scale="4, 4, 4" position="6.9   7.7 3.8" rotation="0 -90 90"></a-image>
+
+      <a-image src="#lightTexture" scale="4, 4, 4" position="7.2 7.9 -6.3" rotation="0 -45 90"></a-image>
+
+      <a-image src="#lightTexture" scale="4, 4, 4" position="7 7.9 -20" rotation="0 -40 90"></a-image>
+
+      <a-image src="#lightTexture" scale="4, 4, 4" position="6.8 7.9 -35.1" rotation="0 -30 90"></a-image>
+
+      <a-image src="#lightTexture" scale="4, 4, 4" position="6.8 7.9 -50.1" rotation="0 -20 90"></a-image>
+
+      <a-image src="#lightTexture" scale="4, 4, 4" position="6.8 7.9 -65.1" rotation="0 -20 90"></a-image>
+
+    </a-scene>
+  </body>
+</html>
